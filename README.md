@@ -11,3 +11,7 @@ I use intelliji as IDE and here I will write helpfull notes to make the app runn
 
 Tips:
 -check the data in the tables when working with db
+An enum is a special "class" in Java used to define a set of constants.
+E extends Event = with any event type that implements the Event interface
+fetches= a aduce
+model = ObservableList
