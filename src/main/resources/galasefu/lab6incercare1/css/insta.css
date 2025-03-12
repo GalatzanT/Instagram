@@ -1,0 +1,131 @@
+/* Main Layout */
+.root {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #DBDBDB;
+    -fx-border-width: 0 1 0 0;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #262626;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 15;
+    -fx-min-width: 200;
+}
+
+.nav-button:hover {
+    -fx-background-color: #F2F2F2;
+}
+
+/* Profile Section */
+.profile-picture {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 4, 0, 0, 0);
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+}
+
+.username-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.follow-button {
+    -fx-background-color: #0095F6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5 15;
+    -fx-background-radius: 8;
+}
+
+.message-button {
+    -fx-background-color: #EFEFEF;
+    -fx-text-fill: #262626;
+    -fx-font-weight: bold;
+    -fx-padding: 5 15;
+    -fx-background-radius: 8;
+}
+
+.more-options-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #262626;
+    -fx-padding: 5 10;
+}
+
+/* Stats Section */
+.stats-number {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.stats-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #262626;
+}
+
+/* Profile Info */
+.fullname-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.occupation-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #262626;
+}
+
+.bio-label {
+    -fx-font-size: 14px;
+    -fx-wrap-text: true;
+}
+
+.website-link {
+    -fx-text-fill: #00376B;
+    -fx-font-size: 14px;
+}
+
+.followers-preview {
+    -fx-font-size: 12px;
+    -fx-text-fill: #8E8E8E;
+}
+
+/* Content Tabs */
+.content-tabs {
+    -fx-background-color: transparent;
+}
+
+.content-tabs .tab-header-area {
+    -fx-padding: 0;
+}
+
+.content-tabs .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 10 15;
+}
+
+.content-tabs .tab:selected {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #262626;
+}
+
+.content-tabs .tab-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #262626;
+}
+
+/* Grid Content */
+.posts-grid {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+}
+
+.post-preview {
+    -fx-background-color: #FAFAFA;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 4, 0, 0, 0);
+}

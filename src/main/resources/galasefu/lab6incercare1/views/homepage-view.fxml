@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="galasefu.lab6incercare1.controller.HomepageController"
+            prefHeight="600.0" prefWidth="600.0"
+            stylesheets="@../css/style.css">
+
+    <HBox spacing="20" layoutX="20" layoutY="20" prefHeight="560.0" prefWidth="760.0">
+        <!-- Left Section -->
+        <VBox spacing="15" alignment="TOP_LEFT" prefWidth="250.0">
+            <Label fx:id="admin2"  styleClass="welcome-label" />
+            <Label text="Prietenii tai" styleClass="section-title" />
+            <ListView fx:id="friendsListView" prefHeight="200.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" spacing="10" layoutX="220.0" layoutY="400.0">
+                <Button text="inapoi"  fx:id="inapoi" onAction="#handlePreviousPage" />
+                <Label text="Paginare" fx:id="text_pagini" />
+                <Button text="inainte"  fx:id="inainte" onAction="#handleNextPage" />
+            </HBox>
+            <Button text="Sterge prieten" fx:id="deleteFriendButton" onAction="#handleDeleteFriend"
+                    prefWidth="200.0" />
+            <Button text="Scrie mesaj" onAction="#scrie_mesaj"  prefWidth="200.0"/>
+            <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="0" layoutY="0">
+                <image>
+                    <Image url="@../images/logo2.jpg"/>
+                </image>
+            </ImageView>
+        </VBox>
+
+        <!-- Right Section -->
+        <VBox spacing="20" alignment="TOP_LEFT" prefWidth="300.0">
+            <!-- Search Users -->
+            <Label text="Cauta utilizatori (Select text + press Enter)" styleClass="section-title" />
+            <TextField fx:id="textCautare" promptText="Scrie numele utilizatorului" onAction="#text_cautare_dinamica" />
+            <ListView fx:id="useriListView" prefHeight="150.0" />
+            <Button text="Trimite cerere de prietenie" fx:id="sendRequestButton" onAction="#buton_trimite_cerere" />
+
+            <!-- View Friend Requests -->
+            <Label text="Inbox de cereri" styleClass="section-title" />
+            <ListView fx:id="cereriListView" prefHeight="150.0" />
+            <HBox spacing="10">
+                <Button text="Accept" fx:id="acceptRequestButton" onAction="#accept_cerere"/>
+                <Button text="Reject" fx:id="rejectRequestButton"  onAction="#refuz_cerere" />
+            </HBox>
+        </VBox>
+    </HBox>
+
+</AnchorPane>

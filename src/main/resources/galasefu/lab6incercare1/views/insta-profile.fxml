@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="galasefu.lab6incercare1.controller.InstaController"
+            prefHeight="800.0" prefWidth="1200.0"
+            stylesheets="@../css/insta.css">
+
+    <HBox AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+          AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+
+        <!-- Left Sidebar Navigation -->
+        <VBox styleClass="sidebar" prefWidth="250" spacing="20">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <!-- Instagram Logo -->
+            <ImageView fitHeight="40" fitWidth="40" styleClass="instagram-logo">
+                <image>
+                    <Image url="@../images/insta2.png"/>
+                </image>
+            </ImageView>
+
+            <!-- Navigation Items -->
+            <Button text="Acasă" styleClass="nav-button"/>
+            <Button text="Căutare" styleClass="nav-button"/>
+            <TextField fx:id="searchField" promptText="Search users..." />
+            <ListView fx:id="searchResultsListView" prefHeight="100.0"/>
+            <Button text="adauga" styleClass="nav-button"/>
+            <Button text="cereri" styleClass="nav-button" />
+            <Button text="Mesaje" styleClass="nav-button" onAction="#handleMessage"/>
+            <Region VBox.vgrow="ALWAYS"/> <!-- Spacer -->
+            <Button text="Meniu" styleClass="nav-button"/>
+        </VBox>
+
+        <!-- Main Content Area -->
+        <VBox HBox.hgrow="ALWAYS" spacing="30">
+            <padding>
+                <Insets top="30" right="40" bottom="30" left="40"/>
+            </padding>
+
+            <!-- Profile Header -->
+            <HBox spacing="80">
+                <!-- Profile Picture -->
+                <ImageView fx:id="profileImageView" fitHeight="150" fitWidth="150" preserveRatio="true"  styleClass="profile-picture">
+                </ImageView>
+
+                <!-- Profile Info -->
+                <VBox spacing="20">
+                    <!-- Username and Buttons Row -->
+                    <HBox spacing="20" alignment="CENTER_LEFT">
+                        <Label fx:id="usernameLabel" styleClass="username-label"/>
+                        <Button fx:id="followButton" text="Urmărești" styleClass="follow-button"/>
+                        <Button fx:id="messageButton" text="Mesaj" styleClass="message-button"/>
+                        <Button styleClass="more-options-button" text="..."/>
+                    </HBox>
+
+                    <!-- Stats Row -->
+                    <HBox spacing="40">
+                        <HBox spacing="5">
+                            <Label fx:id="postsCountLabel" styleClass="stats-number"/>
+                            <Label text="postări" styleClass="stats-label"/>
+                        </HBox>
+                        <HBox spacing="5">
+                            <Label fx:id="followersCountLabel" styleClass="stats-number"/>
+                            <Label text="de urmăritori" styleClass="stats-label"/>
+                        </HBox>
+                        <HBox spacing="5">
+                            <Label fx:id="followingCountLabel" styleClass="stats-number"/>
+                            <Label text="de urmăriri" styleClass="stats-label"/>
+                        </HBox>
+                    </HBox>
+
+                    <!-- Profile Description -->
+                    <VBox spacing="5">
+                        <Label fx:id="fullNameLabel" styleClass="fullname-label"/>
+                        <Label fx:id="occupationLabel" styleClass="occupation-label"/>
+                        <Label fx:id="bioLabel" styleClass="bio-label" wrapText="true"/>
+                        <Hyperlink fx:id="websiteLink" styleClass="website-link"/>
+                    </VBox>
+
+                    <!-- Followers Preview -->
+                    <HBox spacing="5" styleClass="followers-preview">
+                        <Label text="Urmăritori:" styleClass="followers-label"/>
+                        <Label fx:id="followersPreviewLabel" styleClass="followers-names"/>
+                    </HBox>
+                </VBox>
+            </HBox>
+
+            <!-- Content Tabs -->
+            <TabPane styleClass="content-tabs">
+                <Tab text="POSTĂRI" closable="false">
+                    <GridPane fx:id="postsGrid" hgap="4" vgap="4"/>
+                </Tab>
+                <Tab text="REELS" closable="false"/>
+                <Tab text="ETICHETE" closable="false"/>
+            </TabPane>
+        </VBox>
+    </HBox>
+</AnchorPane>

@@ -1,0 +1,26 @@
+/* General Button Style */
+.button {
+    -fx-text-fill: #F1FAEE; /* White text */
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#457B9D, #1D3557);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0.0, 0, 1);
+    -fx-border-color: #A8DADC;
+    -fx-border-width: 2px;
+}
+
+/* Label Style */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #A8DADC; /* Soft teal */
+    -fx-effect: dropshadow(gaussian, rgba(50, 105, 232, 0.5), 0, 0, 0, 1);
+}
+
+/* Table Row Selection */
+.table-row-cell:selected {
+    -fx-background-color: #1D3557;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #F1FAEE; /* White text */
+}
