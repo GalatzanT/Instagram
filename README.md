@@ -1,4 +1,12 @@
-# Instagram(working on)
+# Instagram replica
+
+
+## 🛠️ Built With
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
 Social Network(OOP + DB + GUI)
 
 
