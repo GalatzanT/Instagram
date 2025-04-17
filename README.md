@@ -1,19 +1,42 @@
-# Instagram replica
+# 📸 Instagram Replica
 
+A desktop replica of Instagram built to **learn and reinforce OOP principles**, apply the **Observer** and **Controller** design patterns, and work with a **PostgreSQL database** and **JavaFX GUI**.
 
-## 🛠️ Pre-view
+---
+
+## 🎥 YouTube Demo
+
+▶️ [Watch the project demo video here](https://youtu.be/8Grj1V_ZuUY)
+
+---
+
+## 🖼️ Preview
+
 ![Demo](InstagramDemo.png)
 
+---
 
+## 🧰 Tech Stack
 
-Social Network(OOP + DB + GUI)
+- ☕ Java
+- 🖼️ JavaFX
+- 🗄️ PostgreSQL
+- 🧠 OOP + Design Patterns (Observer, Controller)
+- 🛠️ IntelliJ IDEA
 
+---
 
-I use intelliji as IDE and here I will write helpfull notes to make the app running:
-1. don't forget to clean and to build gradle.
-2. use java fx at project type including
-3. don't forget to link database at build.gradle file dependencies implementation 'org.postgresql:postgresql:42.7.1'
-4. use ctrl + alt + L to reformat code
+## 📝 Setup Instructions
+
+1. **Clean and build** the Gradle project.
+2. Set the project type to use **JavaFX**.
+3. Link the database driver in `build.gradle`:
+   ```groovy
+   dependencies {
+       implementation 'org.postgresql:postgresql:42.7.1'
+   }
+
+4. Use ctrl + alt + L to reformat code
 
 
 Tips:
