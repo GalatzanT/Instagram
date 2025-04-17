@@ -2,7 +2,7 @@
 
 
 ## 🛠️ Pre-view
-![Demo](demo.png)
+![Demo](InstagramDemo.png)
 
 
 
